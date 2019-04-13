@@ -62,6 +62,10 @@ public class DataLoggerActivity extends AppCompatActivity {
                 getSupportActionBar().setTitle(caller);
                 categoryData = LocalDataLog.with().getTypeOfSensorBlocks(getString(R.string.multimeter));
                 break;
+            case "Compass":
+                getSupportActionBar().setTitle(caller);
+                categoryData = LocalDataLog.with().getTypeOfSensorBlocks(getString(R.string.compass));
+                break;
             default:
                 categoryData = LocalDataLog.with().getAllSensorBlocks();
                 getSupportActionBar().setTitle(getString(R.string.logged_data));

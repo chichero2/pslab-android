@@ -17,10 +17,10 @@ import android.view.ViewGroup;
 import io.pslab.R;
 import io.pslab.activity.AccelerometerActivity;
 import io.pslab.activity.BarometerActivity;
-import io.pslab.activity.CompassActivity;
 import io.pslab.activity.LogicalAnalyzerActivity;
 import io.pslab.activity.LuxMeterActivity;
 import io.pslab.activity.MultimeterActivity;
+import io.pslab.activity.NewCompassActivity;
 import io.pslab.activity.OscilloscopeActivity;
 import io.pslab.activity.PowerSourceActivity;
 import io.pslab.activity.SensorActivity;
@@ -98,7 +98,7 @@ public class InstrumentsFragment extends Fragment {
                                 startActivity(intent);
                                 break;
                             case "Compass":
-                                intent = new Intent(context, CompassActivity.class);
+                                intent = new Intent(context, NewCompassActivity.class);
                                 startActivity(intent);
                                 break;
                             default:
